@@ -18,7 +18,7 @@
 
 .search {
   display: grid;
-  grid-template-columns: 500px 50px;
+  grid-template-columns: 500px 50px 50px;
 }
 
 .search input[type="text"] {
@@ -50,6 +50,11 @@
   cursor: pointer;
 }
 
+.search .typeReset {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .anime_container {
   display: flex;
   flex-wrap: wrap;
@@ -59,11 +64,18 @@
 
 .anime_card {
   width: 225px;
-  margin: 12px 0;
+  margin: 12px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .anime_card p {

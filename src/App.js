@@ -10,13 +10,25 @@ const apiRequest = async (search) => {
 function App() {
   const [animeSearch, setanimeSearch] = useState("");
   const [apiData, setApiData] = useState({});
-  const [gotData, setgotData] = useState(false);
+  const [gotData, setgotData] = useState(true);
+  const [dataLoading, setdataLoading] = useState(false);
 
   const handleSubmite = async (event) => {
     event.preventDefault();
+    setgotData(false);
+    setdataLoading(true);
     const data = await apiRequest(animeSearch).then((res) => res);
     setApiData(data);
-    setgotData(true);
+    setdataLoading(false);
+    setanimeSearch("");
+  };
+
+  const displayResult = () => {
+    if (apiData.status) {
+      return <h2>{apiData.message}</h2>;
+    } else {
+      return <AnimeList results={apiData?.results} />;
+    }
   };
 
   return (
@@ -27,17 +39,23 @@ function App() {
           type="text"
           value={animeSearch}
           onChange={(e) => setanimeSearch(e.target.value)}
-          placeholder="search for anime, e.g Pokemon"
-          required
+          placeholder="Search for anime, e.g Pokemon"
         />
-        <button>Go</button>
+        <button
+          className="typeReset"
+          type="reset"
+          onClick={() => setanimeSearch("")}
+        >
+          X
+        </button>
+        <button type="submit">Go</button>
       </form>
       {gotData ? (
-        <AnimeList results={apiData?.results} />
-      ) : apiData.status ? (
-        <h1>{apiData.message}</h1>
-      ) : (
         <h2>Search for Anime to see results</h2>
+      ) : dataLoading ? (
+        <h2>Data is loading...!</h2>
+      ) : (
+        displayResult()
       )}
     </div>
   );

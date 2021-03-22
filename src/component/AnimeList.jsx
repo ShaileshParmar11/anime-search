@@ -3,7 +3,9 @@ const AnimeList = ({ results }) => {
     <div className="anime_container">
       {results.map(({ title, image_url, score, url }, i) => (
         <div key={i} className="anime_card">
-          <img src={image_url} alt={title} />
+          <div className="img_container">
+            <img src={image_url} alt={title} />
+          </div>
           <div>
             <p>{title}</p>
             <p>score: {score}</p>
