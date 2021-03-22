@@ -33,7 +33,9 @@ function App() {
         <button>Go</button>
       </form>
       {gotData ? (
-        <AnimeList apiData={apiData} />
+        <AnimeList results={apiData?.results} />
+      ) : apiData.status ? (
+        <h1>{apiData.message}</h1>
       ) : (
         <h2>Search for Anime to see results</h2>
       )}
