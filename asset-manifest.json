@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/anime-search/static/css/main.1c602410.chunk.css",
-    "main.js": "/anime-search/static/js/main.37c69da2.chunk.js",
-    "main.js.map": "/anime-search/static/js/main.37c69da2.chunk.js.map",
+    "main.css": "/anime-search/static/css/main.a5b184d1.chunk.css",
+    "main.js": "/anime-search/static/js/main.cbd7377d.chunk.js",
+    "main.js.map": "/anime-search/static/js/main.cbd7377d.chunk.js.map",
     "runtime-main.js": "/anime-search/static/js/runtime-main.4cb2967d.js",
     "runtime-main.js.map": "/anime-search/static/js/runtime-main.4cb2967d.js.map",
     "static/js/2.be6adca5.chunk.js": "/anime-search/static/js/2.be6adca5.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.8a528fdd.chunk.js": "/anime-search/static/js/3.8a528fdd.chunk.js",
     "static/js/3.8a528fdd.chunk.js.map": "/anime-search/static/js/3.8a528fdd.chunk.js.map",
     "index.html": "/anime-search/index.html",
-    "static/css/main.1c602410.chunk.css.map": "/anime-search/static/css/main.1c602410.chunk.css.map",
+    "static/css/main.a5b184d1.chunk.css.map": "/anime-search/static/css/main.a5b184d1.chunk.css.map",
     "static/js/2.be6adca5.chunk.js.LICENSE.txt": "/anime-search/static/js/2.be6adca5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4cb2967d.js",
     "static/js/2.be6adca5.chunk.js",
-    "static/css/main.1c602410.chunk.css",
-    "static/js/main.37c69da2.chunk.js"
+    "static/css/main.a5b184d1.chunk.css",
+    "static/js/main.cbd7377d.chunk.js"
   ]
 }
