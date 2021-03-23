@@ -20,7 +20,6 @@ function App() {
     const data = await apiRequest(animeSearch).then((res) => res);
     setApiData(data);
     setdataLoading(false);
-    setanimeSearch("");
   };
 
   const displayResult = () => {
